@@ -1,0 +1,114 @@
+---
+start:
+
+  #
+  #Не советую использовать изображения в форме(image-url). В этой версии плагина они не работают!
+  #
+
+  # Формат: "id:damage:count:name:ench_name:ench_level"
+
+  # Для нестандартного названия (без чар): "id:damage:count:name"
+
+  # Если не нужны чары и нестандартное имя: "id:damage:count"
+
+  # Если нужны чары (без нестандартного имени): "id:damage:count:DEFAULT:ench_name:ench_level"
+
+  # Если вы хотите больше одного зачарования просто сделайте это: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
+  # или "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" если вам не нужно нестандартное название предмета
+
+  # Можно использовать только числовые ID!
+  items:
+  - "260:0:15" #яблоки
+  - "272:0:1" #каменный меч
+  - "5:0:64" #дубовые доски
+  - "54:0:1" #сундук
+  - "58:0:1" #верстак
+  - "61:0:1" #печь
+  - "263:0:15" #уголь
+  - "272:0:1" #каменный меч
+  - "274:0:1" #каменная кирка
+  - "275:0:1" #каменный топор
+  helmet: "302:0:1:DEFAULT:protection:1" #кольчужный сет
+  chestplate: "303:0:1:DEFAULT:protection:1"
+  leggings: "304:0:1:DEFAULT:protection:1"
+  boots: "305:0:1:DEFAULT:protection:1"
+
+  commands: # {player} will get replaced by player's name
+  - "tell {player} стартовый кит получен!"
+
+  cooldown:
+    hours: 24
+    minutes: 30
+
+  # Формат: "name:time:amplifier"
+  # Время в секундах
+  effects:
+  - "speed:120:2" #скорость
+  
+  kit-name: "§fСтарт"
+
+  # Цена за кит набор, Только [EcionomyAPI]
+  # Задайте значение 0, если нужно сделать набор бесплатным
+  money: 0
+
+  # Информация при покупке набора
+  info: "Этот кит бесплатный. Выдается раз в сутки. Хотите его взять?"
+  ###################        #free
+pro:
+
+  items:
+  - "265:0:7" #жел. слиток 7 шт.
+  - "424:0:10" #баранина 10 шт.
+  - "322:0:3" #золотое яблоко 3 шт.
+  - "267:0:1" #железный меч
+  - "257:0:1" #железная кирка
+  - "258:0:1" #железный топор
+  helmet: "306:0:1:DEFAULT:protection:1" #железный сет
+  chestplate: "307:0:1:DEFAULT:protection:1"
+  leggings: "308:0:1:DEFAULT:protection:1"
+  boots: "309:0:1:DEFAULT:protection:1"
+  commands:
+  - "tell {player} профессиональный кит получен!"
+
+  cooldown:
+    hours: 12
+    minutes: 0
+
+  effects:
+  - "speed:120:2" #скорость
+  
+  kit-name: "§aPro"
+
+  money: 8000
+
+  info: "Этот кит стоит 5000$ хотите взять его?"
+ ###################          #free
+vip:
+ 
+  items:
+  - "322:0:10" #золотые яблоки
+  - "276:0:1" #алмазный меч
+  - "278:0:1" #алмазная кирка
+  - "279:0:1" #алмазный топор
+  helmet: "310:0:1:DEFAULT:protection:1" #алмазный сет
+  chestplate: "311:0:1:DEFAULT:protection:1"
+  leggings: "312:0:1:DEFAULT:protection:1"
+  boots: "313:0:1:DEFAULT:protection:1"
+
+  commands:
+  - "tell {player} VIP кит получен!"
+
+  cooldown:
+    hours: 24
+    minutes: 30
+
+  effects:
+  - "speed:120:2"
+
+  kit-name: "§cVIP"
+
+  money: 4500
+
+  info: "Этот кит стоит 4500$ хотите взять его?"
+####################
+...

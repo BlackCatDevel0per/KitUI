@@ -1,0 +1,29 @@
+ #  _   _       _   _           _____             
+ # | \ | |     | | (_)         |  __ \            
+ # |  \| | __ _| |_ ___   _____| |  | | _____   __
+ # | . ` |/ _` | __| \ \ / / _ \ |  | |/ _ \ \ / /
+ # | |\  | (_| | |_| |\ V /  __/ |__| |  __/\ V / 
+ # |_| \_|\__,_|\__|_| \_/ \___|_____/ \___| \_/  
+ #
+ # Больше плагинов в https://vk.com/native_dev
+ # По вопросам native.dev@mail.ru
+
+name: KitUI
+author: Infernus101
+api:
+- 3.3.0
+main: Infernus101\KitUI\Main
+version: 1.0.0
+permissions:
+  kit.command:
+    description: команда /kit
+    default: true
+  kit.sign:
+    description: редактировать набор
+    default: false
+  kit.freepass:
+    description: пропуск ожидания набора
+    default: false
+commands:
+  kit:
+    description: Кит наборы
